@@ -13,3 +13,5 @@ The goal of this competition was to detect and translate American Sign Language 
 For training the model, I used [preprocessed dataset](https://www.kaggle.com/datasets/irohith/aslfr-dataset-tfrecords) that had precomputed mean, standard deviation of the landmarks present on both hands, arms and shoulder and lips.
 
 The model is based on Transformer architecture as the input and output to the models are sequential. CTC Loss was used while Adam optimizer (RectifiedAdam and Lookahead) was used. The model consists of 18M parameters. More information on model can be found in the notebook attached above. The modelling and inference were successful and tflite model was also created. The model achieved private score of 0.647 and public score of 0.696 which was able to secure me 371 out of 1315 teams. 
+
+The kaggle submission can be viewed [here](https://www.kaggle.com/code/bishwashk/gaslfr?scriptVersionId=139845533).
